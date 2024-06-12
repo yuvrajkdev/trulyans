@@ -1,0 +1,110 @@
+.plans-container {
+    margin-top: -4rem;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 4rem;
+    position: relative;
+  }
+  .plans-blur-1{
+      width: 32rem;
+      height: 23rem;
+      border-radius: 10px;
+      top: 6rem;
+      left: 0rem;
+  }
+.jn-btn{
+    border-radius: 10px;
+}
+
+  .plans-blur-2{
+      width: 32rem;
+      height: 23rem;
+      border-radius: 10px;
+      top: 10rem;
+      right: 0rem;
+  }
+  
+  .plans {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 3rem;
+  }
+  
+  .plan {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background: var(--caloryCard);
+    color: white;
+    gap: 2rem;
+    padding: 1.5rem;
+    width: 15rem;
+  }
+  .plan:nth-child(2){
+      background: var(--planCard);
+      border-radius: 10px;
+      transform: scale(1.1);
+  
+  }
+  .plan>svg{
+      fill: var(--orange);
+      width: 2rem;
+      border-radius: 10px;
+      height: 2rem;
+  }
+  .plan>:nth-child(2){
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 10px;
+  }
+  .plan>:nth-child(3){
+      font-size: 3rem;
+      font-weight: bold;
+      border-radius: 10px;
+  }
+  .plan>:nth-child(5){
+      border-radius: 10px;
+      font-size: 0.8rem;
+  }
+  .features{
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+      gap: 1rem;
+  }
+  
+  .feature{
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+  }
+  .feature>img{
+    border-radius: 10px;
+      width: 1rem;
+  }
+  .plans>:nth-child(2)>svg{
+      fill: white;
+      border-radius: 10px;
+  }
+  .plans>:nth-child(2)>button{
+      color: orange;
+      border-radius: 10px;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+      .plans-container>.programs-header{
+          font-size: x-large;
+      }
+      .plans{
+          flex-direction: column;
+      }
+      .plans>:nth-child(2)
+      {
+          transform: none;
+      }
+  }
