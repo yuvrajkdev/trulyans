@@ -68,3 +68,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### to run project on different pc using docker
+
+step1 - download docker desktop 
+step2 - docker login -u dgaikwad2863 -p Dinu@1234
+step3 - docker pull dgaikwad2863/fitclub-app:latest
+step4 - docker run -d -p 3000:3000 --name fitclub-container dgaikwad2863/fitclub-app:latest
