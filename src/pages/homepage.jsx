@@ -25,8 +25,8 @@ import "./styles/homepage.css";
 
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
-	const [logoSize, setLogoSize] = useState(80);
-	const [oldLogoSize, setOldLogoSize] = useState(80);
+	const [logoSize, setLogoSize] = useState(100);
+	const [oldLogoSize, setOldLogoSize] = useState(100);
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -39,7 +39,7 @@ const Homepage = () => {
 			let newLogoSize = 80 - (scroll * 4) / 10;
 
 			if (newLogoSize < oldLogoSize) {
-				if (newLogoSize > 40) {
+				if (newLogoSize > 80) {
 					setLogoSize(newLogoSize);
 					setOldLogoSize(newLogoSize);
 					setStayLogo(false);
@@ -61,7 +61,8 @@ const Homepage = () => {
 	const logoStyle = {
 		display: "flex",
 		position: stayLogo ? "fixed" : "relative",
-		top: stayLogo ? "3vh" : "auto",
+		top: stayLogo ? "2vh" : "auto",
+		left: stayLogo ? "2vm" : "auto",
 		zIndex: 999,
 		border: stayLogo ? "1px solid white" : "none",
 		borderRadius: stayLogo ? "50%" : "none",

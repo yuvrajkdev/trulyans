@@ -9,8 +9,8 @@ function article_1() {
 		keywords: [
 			"The Benefits of Cloud Computing",
 			"TheANSstudio",
-			"TheANSstudio N",
-			"TheANSstudio Nayanajith",
+			"TheANSstudio ",
+			"TheANSstudio ",
 		],
 		style: `
 				.article-content {
@@ -49,8 +49,8 @@ function article_2() {
 		keywords: [
 			"Artificial Intelligence in Healthcare",
 			"TheANSstudio",
-			"TheANSstudio N",
-			"TheANSstudio Nayanajith",
+			"TheANSstudio ",
+			"TheANSstudio ",
 		],
 		body: (
 			<React.Fragment>
@@ -59,6 +59,7 @@ function article_2() {
 		),
 	};
 }
+
 
 const myArticles = [article_1, article_2];
 
