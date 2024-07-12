@@ -15,7 +15,7 @@ import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
 import Article from "../components/homepage/article";
 import Works from "../components/homepage/works";
-import AllProjects from "../components/projects/allProjects";
+/*import AllProjects from "../components/projects/allProjects";*/
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
@@ -25,8 +25,8 @@ import "./styles/homepage.css";
 
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
-	const [logoSize, setLogoSize] = useState(100);
-	const [oldLogoSize, setOldLogoSize] = useState(100);
+	const [logoSize, setLogoSize] = useState(80);
+	const [oldLogoSize, setOldLogoSize] = useState(80);
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -166,11 +166,11 @@ const Homepage = () => {
 								/>
 							</a>
 						</div>
-
+{/*
 						<div className="homepage-projects">
 							<AllProjects />
 						</div>
-
+*/}
 						<div className="homepage-after-title">
 							<div className="homepage-articles">
 								{myArticles.map((article, index) => (
